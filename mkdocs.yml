@@ -40,24 +40,27 @@ nav:
   - Overview:
     - Introduction: index.md
     - Concepts:
-        Multicluster API Overview: concepts/multicluster-api-overview.md
-        About API Overview: concepts/about-api-overview.md
-        Work API Overview: concepts/work-api-overview.md
-        Conformance: concepts/conformance.md
-        Security Model: concepts/security-model.md
-        Implementation Guidelines: concepts/guidelines.md
-        Versioning: concepts/versioning.md
-    - Implementations: implementations.md
-    - FAQ: faq.md
-  - Guides:
-    - Getting started: guides/index.md
-  - Reference:
-    - API Types:
+        Multicluster API Overview: concepts/multicluster-services-api-overview.md
+        Namespace Sameness: concepts/namespace-sameness.md
+        ClusterSet: api-types/cluster-set.md
         ServiceExport: api-types/service-export.md
         ServiceImport: api-types/service-import.md
+  - Guides:
+    - Index: guides/index.md
+    - Implementation Guidelines: guides/guidelines.md
+    - Implementations:
+        GKE Multicluster Services: guides/gke-mcs.md
+        Submariner: guides/submariner-mcs.md
+        Istio: guides/istio.md
+        Gateway API: guides/gateway-api.md
+  - Reference:
     - API specification: references/spec.md
+    - Conformance: references/conformance.md
+    - Security Model: references/security-model.md
+    - Versioning: references/versioning.md    
   - Contributing:
     - How to Get Involved: contributing/index.md
     - Developer Guide: contributing/devguide.md
+    - FAQ: contributing/faq.md
   - Blog:
     - Index: blog/index.md

@@ -9,7 +9,7 @@
    The [Github releases][2] page shows all the releases.
 
 * **Q: Which Kubernetes versions are supported?<br>**
-  A: Generally, we support Kubernetes 1.21+ as the Multicluster API requires support for the [Kubernetes EndpointSlices][3].
+  A: Generally, the About and Multicluster Services APIs support Kubernetes 1.21+ as the Multicluster API requires support for the [Kubernetes EndpointSlices][3].
 
 [1]: https://github.com/kubernetes-sigs/mcs-api
 [2]: https://github.com/kubernetes-sigs/mcs-api/releases
