@@ -5,29 +5,32 @@ This page contains links to all of the meeting notes, design docs and related di
 ## Feedback and Questions
 
 For general feedback, questions or to share ideas please feel free to [create a
-new discussion][gh-disc].
-[gh-disc]:https://github.com/kubernetes-sigs/gateway-api/discussions/new
+new discussion against the site repo][gh-disc].
+[gh-disc]:https://github.com/lauralorenz/sig-multicluster-site-proposal/discussions/new
 
 ## Bug Reports
 
-Bug reports should be filed as [Github Issues][gh-issues] on this repo.
-
+Bug reports should be filed as Github Issues on their respective subproject repo.
+* [Open an issue for a bug with the About API][about-api-issues]
+* [Open an issue for a bug with the MCS API][mcs-api-issues]
+* [Open an issue for a bug with the Work API][work-api-issues]
 **NOTE**: If you're reporting a bug that applies to a specific implementation of
-Multicluster API and not the API specification itself, please check our
+a SIG-MC sponsored API and not the API specification itself, please check our
 [implementations page][implementations] to find links to the repositories where
 you can get help with your specific implementation.
-
-[gh-issues]: https://github.com/kubernetes/community/labels/sig%2Fmulticluster
+[about-api-issues]: https://github.com/kubernetes-sigs/about-api/issues
+[mcs-api-issues]: https://github.com/kubernetes-sigs/mcs-api/issues
+[work-api-issues]: https://github.com/kubernetes-sigs/work-api/issues
 [implementations]: ../implementations.md
 
 ## Communications
 
 Major discussions and notifications will be sent on the [SIG-MC mailing
-list][signetg].
+list][sigmcg].
 
 We also have a [Slack channel (sig-multicluster)][slack] on k8s.io for day-to-day questions, discussions.
 
-[signetg]: https://groups.google.com/forum/#!forum/kubernetes-sig-multicluster
+[sigmcg]: https://groups.google.com/forum/#!forum/kubernetes-sig-multicluster
 [slack]: https://kubernetes.slack.com/archives/C09R1PJR3
 
 ## Meetings
@@ -61,10 +64,6 @@ Some documents from previous quarters were uploaded [here][sig-mc-previous-quart
 #### Initial Design Discussions
 
 
-* [Kubecon 2019 San Diego: API evolution design discussion][kubecon-2019-na-design-discussion]
-* [SIG-NETWORK: Ingress Evolution Sync][sig-net-2019-11-sync]
-* [Kubecon 2019 Barcelona: SIG-NETWORK discussion (general topics, includes V2)][kubecon-2019-eu-discussion]
-
 [sig-multicluster-yt-playlist]: https://www.youtube.com/playlist?list=PL69nYSiGNLP0HqgyqTby6HlDEz7i1mb0-
 [sig-net-yt-playlist]: https://www.youtube.com/playlist?list=PL69nYSiGNLP2E8vmnqo5MwPOY25sDWIxb
 [early-yt-playlist]: https://www.youtube.com/playlist?list=PL7KjrPTDcs4Xe6SZj-51WvBfufKf-la1O
@@ -75,31 +74,53 @@ Some documents from previous quarters were uploaded [here][sig-mc-previous-quart
 
 ## Presentations and Talks
 
-Kubecon NA 2022 update slides and video
-AWS based demo combining About API and their MCS implementation with AWS CloudMap controller
-Kubecon EU 2022 video and slides
-Demo on mutlicluster plugin for coredns
-Kubecon NA 2021 video and slides
-Explanation of MCS, mutlicluster DNS
-Here Be Services video and slides
-Demo of MCS on GKE and Submariner.io
-
-
 | Date           | Title |    |
 |----------------|-------|----|
-| October, 2022 | [Kubecon 2022 Detroit: SIG Multicluster Intro & Deep Dive][2022-kubecon-2022-detroit-schedule] | [slides][2019-kubecon-na-slides], [video][2019-kubecon-na-video]|
-| November, 2019 | Kubecon 2019 San Diego: SIG-NETWORK Service/Ingress Evolution Discussion | [slides][2019-kubecon-na-community-slides] |
-| May, 2019      | [Kubecon 2019 Barcelona: Ingress V2 and Multicluster Services][2019-kubecon-eu] | [slides][2019-kubecon-eu-slides], [video][2019-kubecon-eu-video]|
-| March, 2018    | SIG-NETWORK: Ingress user survey | [data][survey-data], [slides][survey-slides] |
+| October, 2022 | [Kubecon NA 2022 Detroit: SIG Multicluster Intro & Deep Dive][2022-kubecon-na-schedule] (AWS-based demo combining About API and their MCS implementation with AWS CloudMap Controller)| [slides][2022-kubecon-na-slides], [video][2022-kubecon-na-video]|
+| October, 2022 | [Kubecon NA 2022 Detroit: Multi-Cluster Stateful Set Migration: A solution to Upgrade Pain][2022-kubecon-na-mc-statefulset-schedule] | [slides][2022-kubecon-na-mc-statefulset-slides], [video][2022-kubecon-na-mc-statefulset-video] |
+| May, 2022 | [Kubecon EU 2022 Valencia: SIG Multicluster Intro & Deep Dive][2022-kubecon-eu-schedule] (Demo on multicluster plugin for CoreDNS) | [video][2022-kubecon-eu-video] |
+| October, 2021 | [Kubecon NA 2021 Los Angeles: SIG Multicluster Intro & Deep Dive][2021-kubecon-na-schedule]] (Explanation of MCS, multicluster DNS)| [slides][2021-kubecon-na-slides], [video][2021-kubecon-na-video] |
+| October, 2021 | [Kubecon NA 2021 Los Angeles: Here Be Services: Beyond the Cluster Boundary with Multicluster Services][2021-kubecon-na-here-be-services-schedule] (Demo of MCS on GKE and Submariner.io) | [slides][2021-kubecon-na-here-be-services-slides], [video][2021-kubecon-na-here-be-services] |
+| August, 2020 | [Kubecon EU 2020 Virtual : SIG Multicluster Intro][2020-kubecon-eu-schedule] | [video][2020-kubecon-eu-video] |
+| November, 2019 | [Kubecon 2019 San Diego: Intro + Deep Dive SIG Multicluster][2019-kubecon-na-schedule] | [slides][2019-kubecon-na-community-slides] |
+| May, 2019      | [Kubecon 2019 Barcelona: Ingress V2 and Multicluster Services][2019-kubecon-eu-ingress-v2] | [slides][2019-kubecon-eu-ingress-v2-slides], [video][2019-kubecon-eu-ingress-v2-video]|
+| May, 2019      | [Kubecon 2019 Barcelona: Intro + Deep Dive: Multicluster SIG][2019-kubecon-eu-sig-mc-intro] | [video][2019-kubecon-eu-sig-mc-intro-video]
 
-[2022-kubecon-2022-detroit-schedule]: https://sched.co/182P2
-[2019-kubecon-na-slides]: https://static.sched.com/hosted_files/kccncna19/a5/Kubecon%20San%20Diego%202019%20-%20Evolving%20the%20Kubernetes%20Ingress%20APIs%20to%20GA%20and%20Beyond%20%5BPUBLIC%5D.pdf
+
+[2022-kubecon-na-schedule]: https://sched.co/182P2
+[2022-kubecon-na-slides]: https://docs.google.com/presentation/d/106iQ-W3JiyWC_ek6EesisQWhg2bW4xfE514YFAQM3wo/edit?usp=sharing
+[2022-kubecon-na-video]: https://www.youtube.com/watch?v=VZnF3YO1cm8
+
+[2022-kubecon-na-mc-statefulset-schedule]: https://sched.co/182It
+[2022-kubecon-na-mc-statefulset-video]: https://www.youtube.com/watch?v=hkyUqgwTZL8
+[2022-kubecon-na-mc-statefulset-slides]: https://static.sched.com/hosted_files/kccncna2022/1c/KubeCon%20NA%2722_%20Multi-Cluster%20Stateful%20Set%20Migration_%20A%20Solution%20to%20Upgrade%20Pain.pptx.pdf
+
+[2022-kubecon-eu-schedule]: https://sched.co/ytq6
+[2022-kubecon-eu-video]: https://www.youtube.com/watch?v=cYFxjZEXucM
+
+[2021-kubecon-na-schedule]: https://sched.co/lV6k
+[2021-kubecon-na-slides]: https://static.sched.com/hosted_files/kccncna2021/d4/SIG%20Multicluster%20Intro%20%26%20Deep%20Dive%20KubeCon%20NA%202021-final.pdf
+
+[2021-kubecon-na-video]: https://www.youtube.com/watch?v=zVTFm7HJD3s
+[2021-kubecon-na-here-be-services-schedule]: https://sched.co/lV67
+[2021-kubecon-na-here-be-services-slides]: https://static.sched.com/hosted_files/kccncna2021/5b/Here%20Be%20Services.pdf
+[2021-kubecon-na-here-be-services]: https://www.youtube.com/watch?v=_UJrSfmvlMA
+
+[2020-kubecon-eu-schedule]: https://sched.co/Zew0
+[2020-kubecon-eu-video]: https://www.youtube.com/watch?v=bv9c1lJxDIo
+
+[2019-kubecon-na-schedule]: https://sched.co/Uakw
+[2019-kubecon-na-slides]: https://static.sched.com/hosted_files/kccncna19/29/SIG%20Multicluster%20KubeCon%20NA%202019%282%29.pdf
+
 [2019-kubecon-na-video]: https://www.youtube.com/watch?v=cduG0FrjdJA
-[2019-kubecon-eu]: https://kccnceu19.sched.com/event/MPb6/ingress-v2-and-multicluster-services-rohit-ramkumar-bowei-du-google
-[2019-kubecon-eu-slides]: https://static.sched.com/hosted_files/kccnceu19/97/%5Bwith%20speaker%20notes%5D%20Kubecon%20EU%202019_%20Ingress%20V2%20%26%20Multi-Cluster%20Services.pdf
-[2019-kubecon-eu-video]: https://www.youtube.com/watch?v=Ne9UJL6irXY&t=1s
-[survey-data]: https://github.com/bowei/k8s-ingress-survey-2018
-[survey-slides]: https://github.com/bowei/k8s-ingress-survey-2018/blob/master/survey.pdf
+
+[2019-kubecon-eu-ingress-v2]: https://kccnceu19.sched.com/event/MPb6/ingress-v2-and-multicluster-services-rohit-ramkumar-bowei-du-google
+[2019-kubecon-eu-ingress-v2-slides]: https://static.sched.com/hosted_files/kccnceu19/97/%5Bwith%20speaker%20notes%5D%20Kubecon%20EU%202019_%20Ingress%20V2%20%26%20Multi-Cluster%20Services.pdf
+[2019-kubecon-eu-ingress-v2-video]: https://www.youtube.com/watch?v=Ne9UJL6irXY&t=1s
+
+[2019-kubecon-eu-sig-mc-intro]: https://sched.co/MPlP
+[2019-kubecon-eu-sig-mc-intro-video]: https://www.youtube.com/watch?v=GOiN1R2vQos
+
 [2019-kubecon-na-community-slides]: https://docs.google.com/presentation/d/1s0scrQCCFLJMVjjGXGQHoV6_4OIZkaIGjwj4wpUUJ7M
 
 ## Code of conduct

@@ -17,9 +17,6 @@ edit_uri: edit/main/site-src/
 plugins:
   - search
   - awesome-pages
-  - macros:
-      include_dir: examples
-      j2_line_comment_prefix: "#$"
   - redirects:
       redirect_maps:
         'guides/getting-started.md': 'guides/index.md'
@@ -56,8 +53,7 @@ nav:
   - Reference:
     - API specification: references/spec.md
     - Conformance: references/conformance.md
-    - Security Model: references/security-model.md
-    - Versioning: references/versioning.md    
+    - Security Model: references/security-model.md   
   - Contributing:
     - How to Get Involved: contributing/index.md
     - Developer Guide: contributing/devguide.md
