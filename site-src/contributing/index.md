@@ -37,6 +37,7 @@ We also have a [Slack channel (sig-multicluster)][slack] on k8s.io for day-to-da
 
 Meetings discussing the evolution of the different APIs on SIG-Multicluster happen bi-weekly on Tuesdays at 9:30AM Pacific Time / 18:30 CET. Join kubernetes-sig-multicluster@googlegroups.com to get a calendar invite. 
 
+[//]: # (This calendar needs to be replaced with the shared SIG-MC calendar)
 <iframe
   src="https://calendar.google.com/calendar/embed?src=88fe1l3qfn2b6r11k8um5am76c%40group.calendar.google.com"
   style="border: 0" width="800" height="600" frameborder="0"
@@ -73,6 +74,8 @@ Some documents from previous quarters were uploaded [here][sig-mc-previous-quart
 [meeting-notes]: https://tinyurl.com/sig-multicluster-notes
 
 ## Presentations and Talks
+
+[//]: # (Should we move this section in another tab or subtab? Maybe in the 'Reference' section or the 'Blog' section?)
 
 | Date           | Title |    |
 |----------------|-------|----|
