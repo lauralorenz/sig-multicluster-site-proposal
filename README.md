@@ -24,8 +24,19 @@ Participation in the Kubernetes community is governed by the [Kubernetes Code of
 
 Install Python and the requirements.
 
-  ```pip install -r requirements.txt```
+  ```
+    python3 -m venv venv/
+    source venv/bin/activate
+    pip install -r requirements.txt
+  ```
 
+Install the mkdocs plugins
+
+  ```
+  pip install mkdocs-awesome-pages-plugin
+  pip install mkdocs-macros-plugin
+  pip install mkdocs-redirects
+  ```
 Use the mkdocs CLI to serve a development version of the site.
 
   ```mkdocs serve```

@@ -1,3 +1,62 @@
-site_name: SIG Multicluster 
+site_name: SIG Multicluster
+repo_url: https://github.com/lauralorenz/sig-multicluster-site-proposal
+repo_name: lauralorenz/sig-multicluster-site-proposal
+site_dir: site-src
+docs_dir: site-src
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/git-alt
+  logo: images/k8s-favicon.png
+  favicon: images/k8s-favicon.png
+  features:
+    - search.highlight
+    - navigation.tabs
+    - navigation.top
+edit_uri: edit/main/site-src/
+plugins:
+  - search
+  - awesome-pages
+  - redirects:
+      redirect_maps:
+        'guides/getting-started.md': 'guides/index.md'
+        'contributing/community.md': 'contributing/index.md'
+markdown_extensions:
+  - admonition
+  - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+nav:
+  - Overview:
+    - Introduction: index.md
+    - Concepts:
+        Multicluster API Overview: concepts/multicluster-services-api-overview.md
+        Namespace Sameness: concepts/namespace-sameness.md
+        ClusterSet: api-types/cluster-set.md
+        ServiceExport: api-types/service-export.md
+        ServiceImport: api-types/service-import.md
+  - Guides:
+    - Index: guides/index.md
+    - Implementation Guidelines: guides/guidelines.md
+    - Implementations:
+        GKE Multicluster Services: guides/gke-mcs.md
+        Submariner: guides/submariner-mcs.md
+        Istio: guides/istio.md
+        Gateway API: guides/gateway-api.md
+  - Reference:
+    - API specification: references/spec.md
+    - Conformance: references/conformance.md
+    - Security Model: references/security-model.md   
+  - Contributing:
+    - How to Get Involved: contributing/index.md
+    - Developer Guide: contributing/devguide.md
+    - FAQ: contributing/faq.md
+  - Blog:
+    - Index: blog/index.md
