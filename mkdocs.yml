@@ -60,3 +60,5 @@ nav:
     - FAQ: contributing/faq.md
   - Blog:
     - Index: blog/index.md
+    - 2022:
+      - Archiving Kubefed on Jan 3rd, 2023: blog/2022/2022-11-16_archiving-kubefed-on-Jan-3-2023.md
