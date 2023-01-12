@@ -1,7 +1,7 @@
 site_name: SIG Multicluster
 repo_url: https://github.com/lauralorenz/sig-multicluster-site-proposal
 repo_name: lauralorenz/sig-multicluster-site-proposal
-site_dir: site-src
+site_dir: site
 docs_dir: site-src
 theme:
   name: material
