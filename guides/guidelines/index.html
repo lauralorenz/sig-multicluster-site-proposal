@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="/images/k8s-favicon.png">
+      <link rel="icon" href="../../images/k8s-favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>SIG Multicluster</title>
+        <title>Implementation Guidelines - SIG Multicluster</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -37,7 +37,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#implementation-guidelines" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -71,9 +76,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="SIG Multicluster" class="md-header__button md-logo" aria-label="SIG Multicluster" data-md-component="logo">
+    <a href="../.." title="SIG Multicluster" class="md-header__button md-logo" aria-label="SIG Multicluster" data-md-component="logo">
       
-  <img src="/images/k8s-favicon.png" alt="logo">
+  <img src="../../images/k8s-favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -89,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Implementation Guidelines
             
           </span>
         </div>
@@ -167,7 +172,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         Overview
       </a>
     </li>
@@ -177,13 +182,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="/guides/" class="md-tabs__link">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
         Guides
       </a>
     </li>
@@ -199,7 +206,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/references/spec/" class="md-tabs__link">
+      <a href="../../references/spec/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -215,7 +222,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/contributing/" class="md-tabs__link">
+      <a href="../../contributing/" class="md-tabs__link">
         Contributing
       </a>
     </li>
@@ -231,7 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/blog/" class="md-tabs__link">
+      <a href="../../blog/" class="md-tabs__link">
         Blog
       </a>
     </li>
@@ -259,9 +266,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="SIG Multicluster" class="md-nav__button md-logo" aria-label="SIG Multicluster" data-md-component="logo">
+    <a href="../.." title="SIG Multicluster" class="md-nav__button md-logo" aria-label="SIG Multicluster" data-md-component="logo">
       
-  <img src="/images/k8s-favicon.png" alt="logo">
+  <img src="../../images/k8s-favicon.png" alt="logo">
 
     </a>
     SIG Multicluster
@@ -315,7 +322,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -355,7 +362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concepts/multicluster-services-api-overview/" class="md-nav__link">
+      <a href="../../concepts/multicluster-services-api-overview/" class="md-nav__link">
         Multicluster API Overview
       </a>
     </li>
@@ -369,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/concepts/namespace-sameness/" class="md-nav__link">
+      <a href="../../concepts/namespace-sameness/" class="md-nav__link">
         Namespace Sameness
       </a>
     </li>
@@ -383,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/api-types/cluster-set/" class="md-nav__link">
+      <a href="../../api-types/cluster-set/" class="md-nav__link">
         ClusterSet
       </a>
     </li>
@@ -397,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/api-types/service-export/" class="md-nav__link">
+      <a href="../../api-types/service-export/" class="md-nav__link">
         ServiceExport
       </a>
     </li>
@@ -411,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/api-types/service-import/" class="md-nav__link">
+      <a href="../../api-types/service-import/" class="md-nav__link">
         ServiceImport
       </a>
     </li>
@@ -438,12 +445,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -466,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Index
       </a>
     </li>
@@ -478,11 +487,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/guides/guidelines/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Implementation Guidelines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Implementation Guidelines
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#single-resource-consistency" class="md-nav__link">
+    Single resource consistency
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conflicts" class="md-nav__link">
+    Conflicts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gracefully-handling-future-api-versions" class="md-nav__link">
+    Gracefully Handling Future API Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations-of-crd-and-webhook-validation" class="md-nav__link">
+    Limitations of CRD and Webhook Validation
+  </a>
+  
+    <nav class="md-nav" aria-label="Limitations of CRD and Webhook Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expectations" class="md-nav__link">
+    Expectations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-specific" class="md-nav__link">
+    Implementation-specific
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kind-vs-resource" class="md-nav__link">
+    Kind vs. Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-conventions" class="md-nav__link">
+    API Conventions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -520,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/gke-mcs/" class="md-nav__link">
+      <a href="../gke-mcs/" class="md-nav__link">
         GKE Multicluster Services
       </a>
     </li>
@@ -534,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/submariner-mcs/" class="md-nav__link">
+      <a href="../submariner-mcs/" class="md-nav__link">
         Submariner
       </a>
     </li>
@@ -548,7 +653,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/istio/" class="md-nav__link">
+      <a href="../istio/" class="md-nav__link">
         Istio
       </a>
     </li>
@@ -562,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guides/gateway-api/" class="md-nav__link">
+      <a href="../gateway-api/" class="md-nav__link">
         Gateway API
       </a>
     </li>
@@ -617,7 +722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/references/spec/" class="md-nav__link">
+      <a href="../../references/spec/" class="md-nav__link">
         API specification
       </a>
     </li>
@@ -631,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/references/conformance/" class="md-nav__link">
+      <a href="../../references/conformance/" class="md-nav__link">
         Conformance
       </a>
     </li>
@@ -645,7 +750,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/references/security-model/" class="md-nav__link">
+      <a href="../../references/security-model/" class="md-nav__link">
         Security Model
       </a>
     </li>
@@ -693,7 +798,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/contributing/" class="md-nav__link">
+      <a href="../../contributing/" class="md-nav__link">
         How to Get Involved
       </a>
     </li>
@@ -707,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/contributing/devguide/" class="md-nav__link">
+      <a href="../../contributing/devguide/" class="md-nav__link">
         Developer Guide
       </a>
     </li>
@@ -721,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/contributing/faq/" class="md-nav__link">
+      <a href="../../contributing/faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -769,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/" class="md-nav__link">
+      <a href="../../blog/" class="md-nav__link">
         Index
       </a>
     </li>
@@ -809,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/blog/2022/2022-11-16_archiving-kubefed-on-Jan-3-2023/" class="md-nav__link">
+      <a href="../../blog/2022/2022-11-16_archiving-kubefed-on-Jan-3-2023/" class="md-nav__link">
         Archiving Kubefed on Jan 3rd, 2023
       </a>
     </li>
@@ -847,6 +952,78 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#single-resource-consistency" class="md-nav__link">
+    Single resource consistency
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conflicts" class="md-nav__link">
+    Conflicts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gracefully-handling-future-api-versions" class="md-nav__link">
+    Gracefully Handling Future API Versions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limitations-of-crd-and-webhook-validation" class="md-nav__link">
+    Limitations of CRD and Webhook Validation
+  </a>
+  
+    <nav class="md-nav" aria-label="Limitations of CRD and Webhook Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expectations" class="md-nav__link">
+    Expectations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#implementation-specific" class="md-nav__link">
+    Implementation-specific
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kind-vs-resource" class="md-nav__link">
+    Kind vs. Resource
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-conventions" class="md-nav__link">
+    API Conventions
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -858,8 +1035,122 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  <a href="https://github.com/lauralorenz/sig-multicluster-site-proposal/edit/main/site-src/guides/guidelines.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="implementation-guidelines">Implementation guidelines<a class="headerlink" href="#implementation-guidelines" title="Permanent link">&para;</a></h1>
+<p>There are some general design guidelines used throughout these APIs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Throughout the Multicluster API documentation and specification,
+keywords such as "MUST", "MAY", and "SHOULD" are used
+broadly. These should be interpreted as described in RFC 2119.</p>
+</div>
+<h2 id="single-resource-consistency">Single resource consistency<a class="headerlink" href="#single-resource-consistency" title="Permanent link">&para;</a></h2>
+<p>The Kubernetes API guarantees consistency only on a single resource level. There
+are a couple of consequences for complex resource graphs as opposed to single
+resources:</p>
+<ul>
+<li>Error checking of properties spanning multiple resource will be asynchronous
+    and eventually consistent. Simple syntax checks will be possible at the
+    single resource level, but cross resource dependencies will need to be
+    handled by the controller.</li>
+<li>Controllers will need to handle broken links between resources and/or
+    mismatched configuration.</li>
+</ul>
+<h2 id="conflicts">Conflicts<a class="headerlink" href="#conflicts" title="Permanent link">&para;</a></h2>
+<p>Separation and delegation of responsibility among independent actors (e.g
+between cluster ops and application developers) can result in conflicts in the
+configuration. For example, two application teams may inadvertently submit
+configuration for the same HTTP path.</p>
+<p>In most cases, guidance for conflict resolution is provided along with the
+documentation for fields that may have a conflict. If a conflict does not have a
+prescribed resolution, the following guiding principles should be applied:</p>
+<ul>
+<li>Prefer not to break things that are working.</li>
+<li>Drop as little traffic as possible.</li>
+<li>Provide a consistent experience when conflicts occur.</li>
+<li>Make it clear which path has been chosen when a conflict has been identified.
+  Where possible, this should be communicated by setting appropriate status
+  conditions on relevant resources.</li>
+<li>More specific matches should be given precedence over less specific ones.</li>
+<li>The resource with the oldest creation timestamp wins.</li>
+<li>If everything else is equivalent (including creation timestamp), precedences
+  should be given to the resource appearing first in alphabetical order
+  (namespace/name). For example, foo/bar would be given precedence over foo/baz.</li>
+</ul>
+<h2 id="gracefully-handling-future-api-versions">Gracefully Handling Future API Versions<a class="headerlink" href="#gracefully-handling-future-api-versions" title="Permanent link">&para;</a></h2>
+<p>An important consideration when implementing this API is how it might change in
+the future. Similar to the Ingress API before it, this API is designed to be
+implemented by a variety of different products within the same cluster. That
+means that the API version your implementation was developed with may be
+different than the API version it is used with. At a minimum, the following
+requirements must be met to ensure future versions of the API do not break your
+implementation:</p>
+<ul>
+<li>Handle fields with loosened validation without crashing</li>
+<li>Handle fields that have transitioned from required to optional without
+  crashing</li>
+</ul>
+<h2 id="limitations-of-crd-and-webhook-validation">Limitations of CRD and Webhook Validation<a class="headerlink" href="#limitations-of-crd-and-webhook-validation" title="Permanent link">&para;</a></h2>
+<p>CRD and webhook validation is not the final validation i.e. webhook is "nice UX"
+but not schema enforcement. This validation is intended to provide immediate
+feedback to users when they provide an invalid configuration. Write code
+defensively with the assumption that at least some invalid input (Multicluster/About/Work API
+resources) will reach your controller. Both Webhook and CRD validation is not
+fully reliable because it:</p>
+<ul>
+<li>May not be deployed correctly.</li>
+<li>May be loosened in future API releases. (Fields may contain values with less
+  restrictive validation in newer versions of the API). </li>
+</ul>
+<p><em>Note: These limitations are not unique to Multicluster API and apply more broadly to
+any Kubernetes CRDs and webhooks.</em></p>
+<p>Implementers should ensure that, even if unexpected values are encountered in
+the API, their implementations are still as secure as possible and handle this
+input gracefully. The most common response would be to reject the configuration
+as malformed and signal the user via a condition in the status block. To avoid
+duplicating work, Multicluster API maintainers are considering adding a shared
+validation package that implementations can use for this purpose.</p>
+<h3 id="expectations">Expectations<a class="headerlink" href="#expectations" title="Permanent link">&para;</a></h3>
+<p>We expect there will be varying levels of conformance among the
+different providers in the early days of this API. Users can use the
+results of the conformance tests to understand areas where there may
+be differences in behavior from the spec.</p>
+<h3 id="implementation-specific">Implementation-specific<a class="headerlink" href="#implementation-specific" title="Permanent link">&para;</a></h3>
+<p>In some aspects of the APIs, we give the user an ability to specify usage of the
+feature, however, the exact behavior may depend on the underlying
+implementation. For example, regular expression matching is present in all
+implementations but specifying an exact behavior is impossible due to
+subtle differences between the underlying libraries used (e.g. PCRE, ECMA,
+Re2). It is still useful for our users to spec out the feature as much as
+possible, but we acknowledge that the behavior for some subset of the API may
+still vary (and that's ok).</p>
+<p>These cases will be specified as defining delimited parts of the API
+"implementation-specific".</p>
+<h2 id="kind-vs-resource">Kind vs. Resource<a class="headerlink" href="#kind-vs-resource" title="Permanent link">&para;</a></h2>
+<p>Similar to other Kubernetes APIs, Multicluster, Work and About APIs use "Kind" instead of "Resource"
+in object references throughout the API. This pattern should be familiar to
+most Kubernetes users.</p>
+<p>Per the [Kubernetes API conventions][1], this means that all implementations of
+this API should have a predefined mapping between kinds and resources. Relying
+on dynamic resource mapping is not safe.</p>
+<h2 id="api-conventions">API Conventions<a class="headerlink" href="#api-conventions" title="Permanent link">&para;</a></h2>
+<p>The Multicluster, About and Work APIs follow Kubernetes API [conventions][1]. These conventions
+are intended to ease client development and ensure that configuration
+mechanisms can consistently be implemented across a diverse set of use
+cases. </p>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -874,6 +1165,42 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Index
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../gke-mcs/" class="md-footer__link md-footer__link--next" aria-label="Next: GKE Multicluster Services" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              GKE Multicluster Services
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -896,10 +1223,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["search.highlight", "navigation.tabs", "navigation.top"], "search": "/assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
     
   </body>
