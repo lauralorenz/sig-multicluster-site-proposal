@@ -14,5 +14,5 @@ We plan to create the tombstone commit and complete the process in seven weeks o
 This is meant to clarify the state of the ‘federation’ concept and associated projects in Kubernetes and to better set expectations around development and support in the area. Archiving will enable us to send a clear signal about the direction the SIG is headed in and how we will approach our work.
 [:octicons-arrow-right-24: Continue reading][Archiving Kubefed]
 
-[Archiving Kubefed]:/blog/2022/2022-11-16_archiving-kubefed-on-Jan-3-2023/
+[Archiving Kubefed]: 2022/2022-11-16_archiving-kubefed-on-Jan-3-2023.md
 [kubefed-repo]:https://github.com/kubernetes-sigs/kubefed
