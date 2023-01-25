@@ -11,40 +11,8 @@ Specifically, the SIG aims to fine Kubernetes-native ways to:
 
 The SIG is responsible for designing, discussing, implementing and maintaining API’s, tools and documentation related to multi-cluster administration and application management. This includes not only active automated approaches such as Cluster Federation, but also those that employ batch workflow-style continuous deployment systems like Spinnaker and others. Standalone building blocks for these and other similar systems (for example a cluster registry), and proposed changes to kubernetes core where appropriate will also be in scope.
 
-## Project charter
-The following charter defines the scope and governance of the [Multicluster Special Interest Group][sig-multicluster-github]:
+## Problem statement: why multicluster?
 
-* Support an out-of-tree ecosystem by defining API standards that leave plenty of rool for flexibility in their ultimately third party implementation.
-
-* Protect the known multicluster experience from incompatible changes upstream to single clusters by working with other [SIGs][sigs-github].
-
-* Advocate and provide feedback on proposals for extending the single cluster experience to multicluster i.e. network policy.
-
-[sig-multicluster-github]:  https://github.com/kubernetes/community/tree/master/sig-multicluster
-[sigs-github]: https://github.com/kubernetes-sigs
-
-## Goals
-
-* Define a minimal API to support service discovery and consumption across clusters:
-    * Consume a service in another cluster.
-    * Consume a service deployed in multiple clusters as a single service.
-* When a service is consumed from another cluster, its behaviour should be predictable and consistent with how it would be consumed within its own cluster.
-* Allow gradual rollout of changes in a multi-cluster environment.
-* Create building blocks for multi-cluster tooling.
-* Support multiple implementations.
-* Leave room for future extensions and new use cases.
-
-
-## Non-goals
-
-* Define specific implementation details beyond general API behavior.
-* Change behavior of single cluster services in any way.
-* Define what NetworkPolicy means for multi-cluster services.
-* Solve mechanics of multi-cluster service orchestration.
-
-# Multicluster API concepts
-
-## Problem Statement
 There are many reasons to want to run multiple clusters, including but not limited to:
 
 * Location
@@ -65,13 +33,26 @@ There are many reasons to want to run multiple clusters, including but not limit
     * Scale: the application is too big to fit in a single cluster.
     * Upgrade scope: some parts of the application may require an infrastructure upgrade, that may impact other parts of the application. Having multiple clusters can also avoid the need for in-place cluster upgrades.
 
-Any non-trivial use of Kubernetes will likely face one of these issues. As stated in the [Goals section](./index.md#goals), the goal is to define APIs that allow user to consume services transparently whehter their applications are running within a single cluster or multiple clusters.
+## Project charter
+The following charter defines the scope and governance of the [Multicluster Special Interest Group][sig-multicluster-github]:
+
+* Support an out-of-tree ecosystem by defining API standards that leave plenty of rool for flexibility in their ultimately third party implementation.
+
+* Protect the known multicluster experience from incompatible changes upstream to single clusters by working with other [SIGs][sigs-github].
+
+* Advocate and provide feedback on proposals for extending the single cluster experience to multicluster i.e. network policy.
+
+[sig-multicluster-github]:  https://github.com/kubernetes/community/tree/master/sig-multicluster
+[sigs-github]: https://github.com/kubernetes-sigs
+
+
 
 ## Approach
 
 To meet the goals listed above, the SIG-Multicluster team has worked to define three different APIs:
+
 * [About API][about-api-reference]: allows to uniquely identify clusters within a set of clusters ([clusterset][clusterset-definition])
-* [Multicluster API][mc-api-reference]: allows to expose services across clusters which are part of a given [clusterset][clusterset-definition].
+* [Multicluster Services API][mc-api-reference]: allows to expose services across clusters which are part of a given [clusterset][clusterset-definition].
 * [Work API][work-api-reference]: allows to define the workloads to be deployed across clusters which are part of a given [clusterset][clusterset-definition].
 
 [about-api-reference]: ./api-types/about-api.md
@@ -79,7 +60,7 @@ To meet the goals listed above, the SIG-Multicluster team has worked to define t
 [work-api-reference]: ./api-types/work-api.md
 [clusterset-definition]: ./api-types/cluster-set.md
 
-To leave room for implementation, it has currently been decided that SIG-Multicluster shall not focus on the implementation of the mechanisms that rely on those APIs. For example, no reference implementation is provided for a cluster registry or for service discovery. The implementation of the synchronization of ServiceExport resources is also left to the solution providers.
+To leave room for implementation, SIG-Multicluster does not focus on the implementation of the mechanisms that rely on those APIs. For example, no reference implementation is provided for a cluster registry or for service discovery itself.
 
 # Getting started
 Whether you are a user interested in using the different APIs or an implementer interested in conforming to the APIs, the following resources will help give you the necessary background:
@@ -96,6 +77,6 @@ Whether you are a user interested in using the different APIs or an implementer 
 * [Community links][get-involved]
 
 # Contributing
-If you are interested in contributing to or building an implementation using the Gateway API then don’t hesitate to [get involved][get-involved]
+If you are interested in contributing to SIG-Multicluster or building an implementation of one of our APIs, then don’t hesitate to [get involved][get-involved] in SIG meetings, issues on projects, or new designs.
 
 [get-involved]: ./contributing/index.md
