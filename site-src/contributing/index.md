@@ -37,16 +37,16 @@ We also have a [Slack channel (sig-multicluster)][slack] on k8s.io for day-to-da
 
 Meetings discussing the evolution of the different APIs on SIG-Multicluster happen bi-weekly on Tuesdays at 9:30AM Pacific Time / 18:30 CET. Join kubernetes-sig-multicluster@googlegroups.com to get a calendar invite. 
 
-[//]: # (This calendar needs to be replaced with the shared SIG-MC calendar)
+
 <iframe
-  src="https://calendar.google.com/calendar/embed?src=88fe1l3qfn2b6r11k8um5am76c%40group.calendar.google.com"
+  src="https://calendar.google.com/calendar/u/0/embed?src=c5ac8984a64230b4c301124c52e53300440296806f61a22de507598a89c282ea@group.calendar.google.com&ctz=America/Los_Angeles"
   style="border: 0" width="800" height="600" frameborder="0"
   scrolling="no">
 </iframe>
 
 * [Zoom link](https://zoom.us/my/k8s.mc)
-* [Convert to your timezone](http://www.thetimezoneconverter.com/?t=15:00&tz=PT%20%28Pacific%20Time%29)
-* [Add to your calendar](https://calendar.google.com/event?action=TEMPLATE&tmeid=NXU4OXYyY2pqNzEzYzUwYnVsYmZwdXJzZDlfMjAyMTA1MTBUMjIwMDAwWiA4OGZlMWwzcWZuMmI2cjExazh1bTVhbTc2Y0Bn&tmsrc=88fe1l3qfn2b6r11k8um5am76c%40group.calendar.google.com&scp=ALL)
+* [Convert to your timezone](http://www.thetimezoneconverter.com/?t=09:30&tz=PT%20%28Pacific%20Time%29)
+* [Add to your calendar](https://calendar.google.com/calendar/u/0/r/eventedit/copy/MWlzc3MxZHIzbTM5Zmp0bWlxdDQwM2ZjcG5fMjAyMzAxMjRUMTczMDAwWiBjNWFjODk4NGE2NDIzMGI0YzMwMTEyNGM1MmU1MzMwMDQ0MDI5NjgwNmY2MWEyMmRlNTA3NTk4YTg5YzI4MmVhQGc)
 
 
 ### Meeting Notes and Recordings
