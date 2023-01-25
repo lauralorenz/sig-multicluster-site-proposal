@@ -5,6 +5,7 @@ Since its inception in 2015, Kubernetes has been pretty successful at popularizi
 SIG-Multicluster is a [Special Interest Group][sig-multicluster-github] focused on solving common challenges related to the management of multiple Kubernetes clusters, and applications that exist therein. 
 
 Specifically, the SIG aims to fine Kubernetes-native ways to:
+
 * Expose workloads from multiple clusters to each other
 * Share cluster metadata and its place relative to others
 * Generally break down the walls between clusters

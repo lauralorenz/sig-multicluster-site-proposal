@@ -42,6 +42,7 @@ nav:
         ClusterSet: api-types/cluster-set.md
         ServiceExport: api-types/service-export.md
         ServiceImport: api-types/service-import.md
+        Work API: api-types/work-api.md
   - Guides:
     - Index: guides/index.md
     - Implementation Guidelines: guides/guidelines.md
