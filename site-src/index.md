@@ -56,9 +56,9 @@ To meet the goals listed above, the SIG-Multicluster team has worked to define t
 * [Multicluster Services API][mc-api-reference]: allows to expose services across clusters which are part of a given [clusterset][clusterset-definition].
 * [Work API][work-api-reference]: allows to define the workloads to be deployed across clusters which are part of a given [clusterset][clusterset-definition].
 
-[about-api-reference]: ./api-types/about-api.md
-[mc-api-reference]: ./api-types/cluster-set.md
-[work-api-reference]: ./api-types/work-api.md
+[about-api-reference]: ./concepts/about-api.md
+[mc-api-reference]: ./concepts/multicluster-services-api.md
+[work-api-reference]: ./concepts/work-api.md
 [clusterset-definition]: ./api-types/cluster-set.md
 
 To leave room for implementation, SIG-Multicluster does not focus on the implementation of the mechanisms that rely on those APIs. For example, no reference implementation is provided for a cluster registry or for service discovery itself.

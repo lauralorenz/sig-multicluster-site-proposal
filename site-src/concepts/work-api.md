@@ -1,4 +1,4 @@
-# Work API
+# Work API Overview
 
 A common [Work API](https://github.com/kubernetes-sigs/work-api) to distribute workload to multiple clusters.
 
