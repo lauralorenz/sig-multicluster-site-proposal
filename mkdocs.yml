@@ -37,7 +37,7 @@ nav:
   - Overview:
       Introduction: index.md
       About API Overview: concepts/about-api.md
-      Multicluster API Overview: concepts/multicluster-services-api.md
+      Multicluster Services API Overview: concepts/multicluster-services-api.md
       Work API Overview: concepts/work-api.md
   - Guides:
     - Index: guides/index.md
