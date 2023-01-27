@@ -204,7 +204,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../references/spec/" class="md-tabs__link">
+      <a href="../concepts/namespace-sameness/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -335,35 +335,9 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_2" type="checkbox" id="__nav_1_2" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_1_2">
-          Concepts
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Concepts" data-md-level="2">
-        <label class="md-nav__title" for="__nav_1_2">
-          <span class="md-nav__icon md-icon"></span>
-          Concepts
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../concepts/multicluster-services-api-overview/" class="md-nav__link">
-        Multicluster API Overview
+      <a href="../concepts/about-api/" class="md-nav__link">
+        About API Overview
       </a>
     </li>
   
@@ -376,8 +350,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../concepts/namespace-sameness/" class="md-nav__link">
-        Namespace Sameness
+      <a href="../concepts/multicluster-services-api/" class="md-nav__link">
+        Multicluster Services API Overview
       </a>
     </li>
   
@@ -390,44 +364,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../api-types/cluster-set/" class="md-nav__link">
-        ClusterSet
+      <a href="../concepts/work-api/" class="md-nav__link">
+        Work API Overview
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api-types/service-export/" class="md-nav__link">
-        ServiceExport
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api-types/service-import/" class="md-nav__link">
-        ServiceImport
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -617,6 +556,62 @@
           Reference
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concepts/namespace-sameness/" class="md-nav__link">
+        Namespace Sameness
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-types/cluster-set/" class="md-nav__link">
+        ClusterSet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-types/service-export/" class="md-nav__link">
+        ServiceExport
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-types/service-import/" class="md-nav__link">
+        ServiceImport
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -1075,13 +1070,15 @@
 <p>For general feedback, questions or to share ideas please feel free to <a href="https://github.com/lauralorenz/sig-multicluster-site-proposal/discussions/new">create a
 new discussion against the site repo</a>.</p>
 <h2 id="bug-reports">Bug Reports<a class="headerlink" href="#bug-reports" title="Permanent link">&para;</a></h2>
-<p>Bug reports should be filed as Github Issues on their respective subproject repo.
-* <a href="https://github.com/kubernetes-sigs/about-api/issues">Open an issue for a bug with the About API</a>
-* <a href="https://github.com/kubernetes-sigs/mcs-api/issues">Open an issue for a bug with the MCS API</a>
-* <a href="https://github.com/kubernetes-sigs/work-api/issues">Open an issue for a bug with the Work API</a>
-<strong>NOTE</strong>: If you're reporting a bug that applies to a specific implementation of
+<p>Bug reports should be filed as Github Issues on their respective subproject repo.</p>
+<ul>
+<li><a href="https://github.com/kubernetes-sigs/about-api/issues">Open an issue for a bug with the About API</a></li>
+<li><a href="https://github.com/kubernetes-sigs/mcs-api/issues">Open an issue for a bug with the MCS API</a></li>
+<li><a href="https://github.com/kubernetes-sigs/work-api/issues">Open an issue for a bug with the Work API</a></li>
+</ul>
+<p><strong>NOTE</strong>: If you're reporting a bug that applies to a specific implementation of
 a SIG-MC sponsored API and not the API specification itself, please check our
-<a href="../implementations.md">implementations page</a> to find links to the repositories where
+<a href="../guides/">implementations page</a> to find links to the repositories where
 you can get help with your specific implementation.</p>
 <h2 id="communications">Communications<a class="headerlink" href="#communications" title="Permanent link">&para;</a></h2>
 <p>Major discussions and notifications will be sent on the <a href="https://groups.google.com/forum/#!forum/kubernetes-sig-multicluster">SIG-MC mailing
@@ -1090,15 +1087,15 @@ list</a>.</p>
 <h2 id="meetings">Meetings<a class="headerlink" href="#meetings" title="Permanent link">&para;</a></h2>
 <p>Meetings discussing the evolution of the different APIs on SIG-Multicluster happen bi-weekly on Tuesdays at 9:30AM Pacific Time / 18:30 CET. Join kubernetes-sig-multicluster@googlegroups.com to get a calendar invite. </p>
 <p><iframe
-  src="https://calendar.google.com/calendar/embed?src=88fe1l3qfn2b6r11k8um5am76c%40group.calendar.google.com"
+  src="https://calendar.google.com/calendar/u/0/embed?src=c5ac8984a64230b4c301124c52e53300440296806f61a22de507598a89c282ea@group.calendar.google.com&ctz=America/Los_Angeles"
   style="border: 0" width="800" height="600" frameborder="0"
   scrolling="no">
 </iframe>
 </p>
 <ul>
 <li><a href="https://zoom.us/my/k8s.mc">Zoom link</a></li>
-<li><a href="http://www.thetimezoneconverter.com/?t=15:00&amp;tz=PT%20%28Pacific%20Time%29">Convert to your timezone</a></li>
-<li><a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NXU4OXYyY2pqNzEzYzUwYnVsYmZwdXJzZDlfMjAyMTA1MTBUMjIwMDAwWiA4OGZlMWwzcWZuMmI2cjExazh1bTVhbTc2Y0Bn&amp;tmsrc=88fe1l3qfn2b6r11k8um5am76c%40group.calendar.google.com&amp;scp=ALL">Add to your calendar</a></li>
+<li><a href="http://www.thetimezoneconverter.com/?t=09:30&amp;tz=PT%20%28Pacific%20Time%29">Convert to your timezone</a></li>
+<li><a href="https://calendar.google.com/calendar/u/0/r/eventedit/copy/MWlzc3MxZHIzbTM5Zmp0bWlxdDQwM2ZjcG5fMjAyMzAxMjRUMTczMDAwWiBjNWFjODk4NGE2NDIzMGI0YzMwMTEyNGM1MmU1MzMwMDQ0MDI5NjgwNmY2MWEyMmRlNTA3NTk4YTg5YzI4MmVhQGc">Add to your calendar</a></li>
 </ul>
 <h3 id="meeting-notes-and-recordings">Meeting Notes and Recordings<a class="headerlink" href="#meeting-notes-and-recordings" title="Permanent link">&para;</a></h3>
 <p>Meeting agendas and notes are maintained in the <a href="https://tinyurl.com/sig-multicluster-notes">meeting notes
