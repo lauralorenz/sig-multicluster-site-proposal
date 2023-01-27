@@ -35,13 +35,10 @@ markdown_extensions:
       permalink: true
 nav:
   - Overview:
-    - Introduction: index.md
-    - Concepts:
-        Multicluster API Overview: concepts/multicluster-services-api-overview.md
-        Namespace Sameness: concepts/namespace-sameness.md
-        ClusterSet: api-types/cluster-set.md
-        ServiceExport: api-types/service-export.md
-        ServiceImport: api-types/service-import.md
+      Introduction: index.md
+      About API Overview: concepts/about-api.md
+      Multicluster Services API Overview: concepts/multicluster-services-api.md
+      Work API Overview: concepts/work-api.md
   - Guides:
     - Index: guides/index.md
     - Implementation Guidelines: guides/guidelines.md
@@ -51,6 +48,10 @@ nav:
         Istio: guides/istio.md
         Gateway API: guides/gateway-api.md
   - Reference:
+    - Namespace Sameness: concepts/namespace-sameness.md
+    - ClusterSet: api-types/cluster-set.md
+    - ServiceExport: api-types/service-export.md
+    - ServiceImport: api-types/service-import.md
     - API specification: references/spec.md
     - Conformance: references/conformance.md
     - Security Model: references/security-model.md   
