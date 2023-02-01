@@ -1,4 +1,4 @@
-# Blog
+# Announcements 
 
 ## [Archiving Kubefed on January 3rd, 2023][Archiving Kubefed]
 
