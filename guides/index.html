@@ -239,7 +239,7 @@
   
     <li class="md-tabs__item">
       <a href="../blog/" class="md-tabs__link">
-        Blog
+        Announcements
       </a>
     </li>
   
@@ -476,6 +476,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mcs-controller-for-aws-cloudmap" class="md-nav__link">
+    MCS controller for AWS Cloudmap
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -499,95 +506,6 @@
       <a href="guidelines/" class="md-nav__link">
         Implementation Guidelines
       </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_2_3">
-          Implementations
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Implementations" data-md-level="2">
-        <label class="md-nav__title" for="__nav_2_3">
-          <span class="md-nav__icon md-icon"></span>
-          Implementations
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="gke-mcs/" class="md-nav__link">
-        GKE Multicluster Services
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="submariner-mcs/" class="md-nav__link">
-        Submariner
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="istio/" class="md-nav__link">
-        Istio
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="gateway-api/" class="md-nav__link">
-        Gateway API
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -697,34 +615,6 @@
 
             
           
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../references/conformance/" class="md-nav__link">
-        Conformance
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../references/security-model/" class="md-nav__link">
-        Security Model
-      </a>
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -779,20 +669,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/devguide/" class="md-nav__link">
-        Developer Guide
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../contributing/faq/" class="md-nav__link">
         FAQ
       </a>
@@ -824,14 +700,14 @@
       
       
         <label class="md-nav__link" for="__nav_5">
-          Blog
+          Announcements
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Blog" data-md-level="1">
+      <nav class="md-nav" aria-label="Announcements" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Blog
+          Announcements
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -957,6 +833,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mcs-controller-for-aws-cloudmap" class="md-nav__link">
+    MCS controller for AWS Cloudmap
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -987,8 +870,9 @@
 <p>Implementors and integrators of Multicluster API are encouraged to update this document with status information about their implementations, the versions they cover, and documentation to help users get started.</p>
 <h2 id="implementation-status">Implementation Status<a class="headerlink" href="#implementation-status" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://cloud.google.com/kubernetes-engine/docs/concepts/multi-cluster-services">Google Cloud MCS</a> (General Availability)</li>
-<li><a href="https://submariner.io/">Submariner</a> (???)</li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/concepts/multi-cluster-services">Google Cloud MCS</a>: General Availability</li>
+<li><a href="https://submariner.io/">Submariner</a>: 0.13.3</li>
+<li><a href="https://github.com/aws/aws-cloud-map-mcs-controller-for-k8s">MCS controller for AWS Cloudmap</a>: Alpha</li>
 </ul>
 <h2 id="implementations_1">Implementations<a class="headerlink" href="#implementations_1" title="Permanent link">&para;</a></h2>
 <p>In this section you will find specific links to blog posts, documentation and other Multicluster API references for specific implementations.</p>
@@ -1004,6 +888,9 @@ Submariner provides:</p>
 <li><code>subctl</code>, a command-line utility that simplifies deployment and management</li>
 <li>Support for interconnecting clusters using overlapping CIDRs</li>
 </ul>
+<h3 id="mcs-controller-for-aws-cloudmap">MCS controller for AWS Cloudmap<a class="headerlink" href="#mcs-controller-for-aws-cloudmap" title="Permanent link">&para;</a></h3>
+<p>The <a href="https://github.com/aws/aws-cloud-map-mcs-controller-for-k8s">AWS Cloud Map Multi-cluster Service Discovery Controller for Kubernetes (K8s)</a> implements the Kubernetes <a href="https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster/1645-multi-cluster-services-api">KEP-1645: Multi-Cluster Services API</a> and <a href="https://github.com/kubernetes/enhancements/tree/master/keps/sig-multicluster/2149-clusterid">KEP-2149: ClusterId for ClusterSet identification</a>, which allows services to communicate across multiple clusters. The implementation relies on AWS Cloud Map for enabling cross-cluster service discovery.</p>
+<p>Please follow this <a href="https://aws.github.io/aws-cloud-map-mcs-controller-for-k8s/">guide</a> for the first steps to set up the multicluster controller.</p>
 
 
 
